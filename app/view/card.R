@@ -1,7 +1,7 @@
 box::use(shiny[...],
          echarts4r[...],
          glue[glue],
-         flexdashboard[gaugeOutput,])
+         flexdashboard[gaugeOutput, ])
 
 #' @export
 key_metrics_card <- function(id,
@@ -188,21 +188,7 @@ gauge_card <- function(id,
         font-weight: bold;",
         "Bounce Rate - 7 days"
       ),
-      div(style = "resize: both; overflow:auto;",
-          fluidRow(
-            column(2,
-                   ),
-            column(8,
-                   gaugeOutput(id)
-                   # shinycssloaders::withSpinner(echarts4rOutput(id),
-                   #                              type = 4,
-                   #                              size = 0.5,
-                   #                              color = "#58D9F9")
-                   ),
-            column(2,)
-          )
-         
-          )
+      div(gaugeOutput(id))
     )
   )
 }
