@@ -18,49 +18,44 @@ ui <- function(id) {
       column(3,
              div(
              key_metrics_card(ns("plot_1"),
-                              card_height = "55vh",
                               header_text = "Conversions",
                               key_metric = "229",
                               key_metric_text = "past 7 days"),
-             metrics_info_card("40vh",
-                        list("organic", "cpc", "(none)", "referral", "p_social"),
-                        list("97", "49", "49", "31", "3"))
+             metrics_info_card(
+               list("organic", "cpc", "(none)", "referral", "p_social"),
+               list("97", "49", "49", "31", "3"))
              )
       ),
       column(3,
              div(
-               key_danger_metrics_card(ns("plot_2"),
-                                       card_height = "55vh",
-                                       header_text = "Conversion rate",
-                                key_metric = "0.9%",
-                              key_metric_text = "7 day average"),
-             metrics_info_card("40vh",
-                          list("cpc", "p_social", "referral", "(none)",  "organic"),
-                          list("6.0%", "3.7%", "3.1%", "0.7%", "0.6%"))
+              key_metrics_card(ns("plot_2"),
+                               header_text = "Conversion rate",
+                               key_metric = "0.9%",
+                               key_metric_text = "7 day average"),
+             metrics_info_card(
+               list("cpc", "p_social", "referral", "(none)",  "organic"),
+               list("6.0%", "3.7%", "3.1%", "0.7%", "0.6%"))
              )
       ),
       column(3,
              key_metrics_card(ns("plot_3"),
-                              card_height = "55vh",
                               header_text = "Sessions",
                               key_metric = "26.9K",
                               key_metric_text = "past 7 days"),
-             metrics_info_card("40vh",
-                               list("organic", "(none)", "cpc",  "referral", "p_social"),
-                               list("17.3K", "6,603", "1,333", "1,009", "87"))
+             metrics_info_card(
+               list("organic", "(none)", "cpc",  "referral", "p_social"),
+               list("17.3K", "6,603", "1,333", "1,009", "87"))
       ),
       column(3,
              div(
-               side_card("22vh",
-                         side_heading = "Stickiness - 7 day",
+               side_card(side_heading = "Stickiness - 7 day",
                          metrics1 = "80.3%", metrics1_text = "New users",
                          metrics2 = "1.14", metrics2_text = "Sessions per user"),
-               side_card("22vh",
-                         side_heading = "Engagement - 7 day",
+               side_card(side_heading = "Engagement - 7 day",
                          metrics1 = "59s", metrics1_text = "Avg session duration",
                          metrics2 = "1.47", metrics2_text = "Pages per session"),
-             gauge_card(ns("gauge_plot"), "22vh"),
-             map_card(ns("map_plot"), "22vh")
+             gauge_card(ns("gauge_plot")),
+             map_card(ns("map_plot"))
              )
       )
     )
