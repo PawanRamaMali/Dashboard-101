@@ -1,1 +1,1 @@
-body{background:#16113a;font-family:"Lato",Helvetica,sans-serif}.bg-card{background-color:#2d2f58}
+body{background:#16113a;font-family:"Lato",Helvetica,sans-serif}.bg-card{background-color:#2d2f58}.card-body{overflow:hidden}.card-title{margin-top:-0.5rem;font-weight:bold}.metrics_card{height:55vh}.metrics_info_card{height:40vh}.metrics_card_header{margin:.5rem;margin-left:1rem;font-weight:bold}.metric_info_key .metric_info_value{display:flex;justify-content:flex-end}.side_card{height:22vh;max-width:40rem;overflow:hidden;position:inherit}
