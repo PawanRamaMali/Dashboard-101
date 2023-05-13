@@ -1,0 +1,11 @@
+$body-background: #16113a;
+$card-background: #2d2f58;
+
+body {
+  background: $body-background;
+  font-family: 'Lato', Helvetica, sans-serif;
+}
+
+.bg-card {
+  background-color: $card-background;
+}
