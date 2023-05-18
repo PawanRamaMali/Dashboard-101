@@ -1,8 +1,6 @@
 # Dashboard-101
 Dashboard 101
 
-Dashboard built as part of UI learning task at Bench.
-
 ![image](https://github.com/Appsilon/Dashboard-101/assets/11299574/88211b1e-3254-4bad-b816-169d2bb3024f)
 
 **Here are the features:**
@@ -23,7 +21,4 @@ These additions will help elevate the functionality and usability of the dashboa
 
 _Feel free to collaborate and contribute to these enhancements!_
 
-
-- Dashboard Link - https://connect.appsilon.com/Dashboard-101/
-- GitHub Code - https://github.com/Appsilon/Dashboard-101
 - Loom - https://www.loom.com/share/eebf38dd461f44509d8b731643e4c2e8
